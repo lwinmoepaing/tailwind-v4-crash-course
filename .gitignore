@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# generated tailwind css
+output/
+
+# logs
+npm-debug.log*
+yarn-error.log*
+
+# editor / os
+.DS_Store
+.vscode/
+.idea/
