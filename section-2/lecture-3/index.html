@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="output/output.css" />
+  </head>
+  <body class="p-5">
+    <main class="max-w-md mx-auto mt-10 p-6 rounded-xl border bg-indigo-50 border-indigo-200 outline-2 outline-offset-5 outline-indigo-100 shadow-xl shadow-indigo-500/30">
+      <h1 class="text-2xl font-bold text-shadow-sm text-indigo-950 text-shadow-indigo-100">Invite your team</h1>
+      <p class="mt-2 text-indigo-700">
+        Send an invite, or <a href="#" class="underline decoration-indigo-400">copy the join link</a>.
+      </p>
+
+      <input
+        type="email"
+        placeholder="teammate@company.com"
+        class="block w-full mt-4 px-3 py-2 rounded-lg text-indigo-900 placeholder-indigo-400 caret-indigo-600 inset-ring-2 inset-ring-indigo-200 inset-shadow-sm inset-shadow-indigo-200"
+      />
+
+      <label class="flex items-center gap-2 mt-3 text-indigo-700">
+        <input type="checkbox" class="accent-indigo-300" /> Email me when they join
+      </label>
+
+      <ul class="mt-4 h-28 overflow-y-scroll divide-y divide-indigo-400 text-indigo-800 scrollbar-thumb-indigo-400 scrollbar-track-indigo-100">
+        <li class="py-2">Ko Lwin</li>
+        <li class="py-2">Ma Ma</li>
+        <li class="py-2">Aung Gyi</li>
+        <li class="py-2">Kyaw Gyi</li>
+        <li class="py-2">Okkar</li>
+      </ul>
+
+      <button class="mt-4 px-4 py-2 rounded-lg inline-flex items-center gap-2 bg-linear-to-r from-indigo-500 to-rose-500 text-white cursor-pointer ring-2 ring-indigo-200">
+        <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white">
+          <circle cx="12" cy="12" r="10" class="fill-none" stroke-width="1.5" />
+          <path d="M7 12l10-4-4 10-1.5-4.5z" />
+        </svg>
+        Send invite
+      </button>
+    </main>
+  </body>
+</html>
