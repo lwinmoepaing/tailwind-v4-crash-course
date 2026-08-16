@@ -17,6 +17,8 @@ Two kinds of lecture folders:
 
 - **Talk-only lecture** — just `README.md` containing `# No Codes` (slides/theory, no demo).
 - **Code lecture** — `package.json` + `index.html` + `src/input.css` (output is generated).
+  Some also ship a `fonts/` folder (e.g. `section-2/lecture-4`, `lecture-5`); the same font file is
+  copied into each lecture on purpose.
 
 Each code lecture is a **complete, self-contained mini project**. It has its own `package.json`
 and its own `node_modules`. Keep it that way:
@@ -83,10 +85,8 @@ docs: add readme for students
 chore: add gitignore
 ```
 
-## Known issues
+## Gotchas
 
-- `section-2/lecture-1/index.html` links `../output/output.css`, but its build writes to
-  `output/output.css` **inside** the lecture folder. The stylesheet does not load. Fix the link
-  to `output/output.css`.
-- No `.gitignore` yet, so `node_modules/` and `output/` will be committed once anyone installs
-  or builds.
+- `index.html` must link `output/output.css` (relative to the lecture folder), never `../output/...`.
+- `node_modules/` and `output/` are git-ignored, so a fresh clone has no CSS until someone runs
+  `npm install && npm run build`.
