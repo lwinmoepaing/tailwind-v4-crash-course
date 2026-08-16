@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="output/output.css" />
+  </head>
+
+  <body class="p-5">
+    <section class="space-y-8">
+      <!-- Border Width -->
+      <div>
+        <h2 class="mb-3 font-bold">Border Width</h2>
+
+        <div class="space-y-3 *:w-60 *:p-3">
+          <div class="border">
+            border
+          </div>
+
+          <div class="border-2">
+            border-2
+          </div>
+
+          <div class="border-4">
+            border-4
+          </div>
+
+          <div class="border-8">
+            border-8
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Individual Border Sides -->
+      <div>
+        <h2 class="mb-3 font-bold">Border Sides</h2>
+
+        <div class="space-y-3 *:w-60 *:p-3 *:border-blue-500">
+          <div class="border-t-4">
+            border-t-4
+          </div>
+
+          <div class="border-r-4">
+            border-r-4
+          </div>
+
+          <div class="border-b-4">
+            border-b-4
+          </div>
+
+          <div class="border-l-4">
+            border-l-4
+          </div>
+
+          <div class="border-x-4">
+            border-x-4
+          </div>
+
+          <div class="border-y-4">
+            border-y-4
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Border Color -->
+      <div>
+        <h2 class="mb-3 font-bold">Border Color</h2>
+
+        <div class="space-y-3 *:w-60 *:border-4 *:p-3">
+          <div class="border-red-500">
+            border-red-500
+          </div>
+
+          <div class="border-blue-500">
+            border-blue-500
+          </div>
+
+          <div class="border-green-500">
+            border-green-500
+          </div>
+
+          <div class="border-slate-300">
+            border-slate-300
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Border Style -->
+      <div>
+        <h2 class="mb-3 font-bold">Border Style</h2>
+
+        <div class="space-y-3 *:w-60 *:border-4 *:border-blue-500 *:p-3">
+          <div class="border-solid">
+            border-solid
+          </div>
+
+          <div class="border-dashed">
+            border-dashed
+          </div>
+
+          <div class="border-dotted">
+            border-dotted
+          </div>
+
+          <div class="border-double">
+            border-double
+          </div>
+
+          <div class="border-none">
+            border-none
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="mt-12 space-y-8">
+
+      <!-- Radius Sizes -->
+      <div>
+        <h2 class="mb-3 font-bold">Border Radius</h2>
+
+        <div class="flex flex-wrap gap-4 *:size-24 *:bg-blue-500 *:p-3 *:text-white">
+          <div class="rounded-none">
+            none
+          </div>
+
+          <div class="rounded-sm">
+            sm
+          </div>
+
+          <div class="rounded-md">
+            md
+          </div>
+
+          <div class="rounded-lg">
+            lg
+          </div>
+
+          <div class="rounded-xl">
+            xl
+          </div>
+
+          <div class="rounded-2xl">
+            2xl
+          </div>
+
+          <div class="rounded-3xl">
+            3xl
+          </div>
+
+          <div class="rounded-full">
+            full
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Radius Sides -->
+      <div>
+        <h2 class="mb-3 font-bold">Radius Sides</h2>
+
+        <div class="flex flex-wrap gap-4 *:size-24 *:bg-blue-500">
+          <div class="rounded-t-2xl"></div>
+
+          <div class="rounded-r-2xl"></div>
+
+          <div class="rounded-b-2xl"></div>
+
+          <div class="rounded-l-2xl"></div>
+        </div>
+      </div>
+
+
+      <!-- Individual Corners -->
+      <div>
+        <h2 class="mb-3 font-bold">Individual Corners</h2>
+
+        <div class="flex flex-wrap gap-4 *:size-24 *:bg-blue-500">
+          <div class="rounded-tl-3xl"></div>
+
+          <div class="rounded-tr-3xl"></div>
+
+          <div class="rounded-br-3xl"></div>
+
+          <div class="rounded-bl-3xl"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="mt-12 space-y-8">
+
+      <!-- Ring Width -->
+      <div>
+        <h2 class="mb-5 font-bold">Ring Width</h2>
+
+        <div class="flex flex-wrap gap-8">
+          <button class="rounded-lg bg-white px-5 py-2 ring">
+            ring
+          </button>
+
+          <button class="rounded-lg bg-white px-5 py-2 ring-2">
+            ring-2
+          </button>
+
+          <button class="rounded-lg bg-white px-5 py-2 ring-4">
+            ring-4
+          </button>
+
+          <button class="rounded-lg bg-white px-5 py-2 ring-8">
+            ring-8
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Ring Color -->
+      <div>
+        <h2 class="mb-5 font-bold">Ring Color</h2>
+
+        <div class="flex flex-wrap gap-8">
+          <button class="rounded-lg px-5 py-2 ring-4 ring-red-500">
+            Red Ring
+          </button>
+
+          <button class="rounded-lg px-5 py-2 ring-4 ring-blue-500">
+            Blue Ring
+          </button>
+
+          <button class="rounded-lg px-5 py-2 ring-4 ring-green-500">
+            Green Ring
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Ring Opacity -->
+      <div>
+        <h2 class="mb-5 font-bold">Ring Opacity</h2>
+
+        <button class="rounded-lg px-5 py-2 ring-4 ring-blue-500/30">
+          ring-blue-500/30
+        </button>
+      </div>
+
+
+      <!-- Ring Offset -->
+      <div>
+        <h2 class="mb-5 font-bold">Ring Offset</h2>
+
+        <div class="flex gap-8">
+          <button class="rounded-lg bg-blue-500 px-5 py-2 text-white ring-2 ring-blue-500 ring-offset-2">
+            ring-offset-2
+          </button>
+
+          <button class="rounded-lg bg-blue-500 px-5 py-2 text-white ring-2 ring-blue-500 ring-offset-4">
+            ring-offset-4
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Focus Ring — Real World -->
+      <div>
+        <h2 class="mb-3 font-bold">Focus Ring</h2>
+
+        <input type="text" placeholder="Click me" class="
+                  rounded-lg
+                  border
+                  border-slate-300
+                  px-4
+                  py-2
+                  outline-none
+                  focus:ring-2
+                  focus:ring-blue-500
+              ">
+      </div>
+
+    </section>
+
+    <section class="mt-12 space-y-8">
+
+      <!-- Shadow Sizes -->
+      <div>
+        <h2 class="mb-5 font-bold">Box Shadow</h2>
+
+        <div class="grid grid-cols-2 gap-8 bg-slate-100 p-8 md:grid-cols-4">
+
+          <div class="rounded-lg bg-white p-6 shadow-2xs">
+            shadow-2xs
+          </div>
+
+          <div class="rounded-lg bg-white p-6 shadow-xs">
+            shadow-xs
+          </div>
+
+          <div class="rounded-lg bg-white p-6 shadow-sm">
+            shadow-sm
+          </div>
+
+          <div class="rounded-lg bg-white p-6 shadow-md">
+            shadow-md
+          </div>
+
+          <div class="rounded-lg bg-white p-6 shadow-lg">
+            shadow-lg
+          </div>
+
+          <div class="rounded-lg bg-white p-6 shadow-xl">
+            shadow-xl
+          </div>
+
+          <div class="rounded-lg bg-white p-6 shadow-2xl">
+            shadow-2xl
+          </div>
+
+          <div class="rounded-lg bg-white p-6 shadow-none">
+            shadow-none
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Shadow Color -->
+      <div>
+        <h2 class="mb-5 font-bold">Shadow Color</h2>
+
+        <div class="flex flex-wrap gap-8 bg-slate-100 p-8">
+
+          <div class="rounded-lg bg-blue-500 p-6 text-white shadow-lg shadow-blue-500/50">
+            Blue Shadow
+          </div>
+
+          <div class="rounded-lg bg-red-500 p-6 text-white shadow-lg shadow-red-500/50">
+            Red Shadow
+          </div>
+
+          <div class="rounded-lg bg-green-500 p-6 text-white shadow-lg shadow-green-500/50">
+            Green Shadow
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Inset Shadow -->
+      <div>
+        <h2 class="mb-3 font-bold">Inset Shadow</h2>
+
+        <div class="w-60 rounded-lg bg-slate-100 p-6 inset-shadow-sm">
+          inset-shadow-sm
+        </div>
+      </div>
+
+    </section>
+
+    <section class="mt-12 space-y-8">
+
+      <!-- Vertical Divider -->
+      <div>
+        <h2 class="mb-3 font-bold">Vertical Items — divide-y</h2>
+
+        <div class="w-72 divide-y rounded-lg border">
+          <div class="p-4">
+            Profile
+          </div>
+
+          <div class="p-4">
+            Settings
+          </div>
+
+          <div class="p-4">
+            Notifications
+          </div>
+
+          <div class="p-4">
+            Logout
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Horizontal Divider -->
+      <div>
+        <h2 class="mb-3 font-bold">Horizontal Items — divide-x</h2>
+
+        <div class="flex w-fit divide-x rounded-lg border">
+          <div class="p-4">
+            HTML
+          </div>
+
+          <div class="p-4">
+            CSS
+          </div>
+
+          <div class="p-4">
+            JavaScript
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Divider Width -->
+      <div>
+        <h2 class="mb-3 font-bold">Divider Width</h2>
+
+        <div class="w-72 divide-y-4 divide-blue-500 border">
+          <div class="p-4">
+            Item 1
+          </div>
+
+          <div class="p-4">
+            Item 2
+          </div>
+
+          <div class="p-4">
+            Item 3
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Divider Color -->
+      <div>
+        <h2 class="mb-3 font-bold">Divider Color</h2>
+
+        <div class="w-72 divide-y divide-red-500 border">
+          <div class="p-4">
+            Item 1
+          </div>
+
+          <div class="p-4">
+            Item 2
+          </div>
+
+          <div class="p-4">
+            Item 3
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Divider Style -->
+      <div>
+        <h2 class="mb-3 font-bold">Divider Style</h2>
+
+        <div class="w-72 divide-y-2 divide-dashed divide-blue-500 border">
+          <div class="p-4">
+            Item 1
+          </div>
+
+          <div class="p-4">
+            Item 2
+          </div>
+
+          <div class="p-4">
+            Item 3
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </body>
+</html>
